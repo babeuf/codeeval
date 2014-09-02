@@ -7,7 +7,7 @@ fs.readFileSync(process.argv[2]).toString().split('\n').forEach(function (line) 
     line = line.trim() ; 
        
  
- console.log(line.match(pattern) || ( line.charAt(0) == "\"" && line.match(pattenRelou) ? "true" : "false") ; 
+ console.log(line.match(pattern) || ( line.charAt(0) == "\"" && line.match(pattenRelou)) ? "true" : "false") ; 
     
     
 
