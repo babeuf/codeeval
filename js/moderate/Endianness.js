@@ -2,8 +2,8 @@
 //console.log(os.endianness() == "BE" ? "BigEndian" : "LittleEndian") ; 
 
 
-  var b = new ArrayBuffer(4);var a = new Uint32Array(b);
-  
+  var b = new ArrayBuffer(4);
+var a = new Uint32Array(b);  
 
   var c = new Uint8Array(b);
   a[0] = 0xdeadbeef;
