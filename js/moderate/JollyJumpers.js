@@ -24,8 +24,7 @@ fs.readFileSync(process.argv[2]).toString().split('\n').forEach(function (line) 
             for ( var i = 1 ; i < l ; ++i )
             {
                 var d = Math.abs(a[i-1] - a[i]) ;
-               console.log(d) ; 
-                if ( d != i && d != l-i ) break ; 
+              if ( d != i && d != l-i ) break ; 
                 
                 if ( i == 1 ) up = d == 1 ;                 
                 else if ( up && d != i || !up && d != l - i ) break ; 
